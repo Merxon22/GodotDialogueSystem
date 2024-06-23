@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="DialogueGroup" load_steps=11 format=3 uid="uid://dtkemgwthimvf"]
+
+[ext_resource type="Script" path="res://Scripts/dialogue_group.gd" id="1_4fml8"]
+[ext_resource type="Texture2D" uid="uid://cnk3d015ncnji" path="res://Sprites/Masculine_A_surprised.png" id="1_86yvb"]
+[ext_resource type="Script" path="res://Scripts/dialogue.gd" id="2_fq05p"]
+[ext_resource type="Texture2D" uid="uid://bik871b21hrmd" path="res://Sprites/Masculine_B_sad.png" id="3_o6ecp"]
+[ext_resource type="Texture2D" uid="uid://c1bg1dbaorres" path="res://Sprites/Masculine_A_happy.png" id="4_su3nd"]
+[ext_resource type="Texture2D" uid="uid://b56oj1jn01k3h" path="res://Sprites/Masculine_B_surprised.png" id="5_u7cyk"]
+
+[sub_resource type="Resource" id="Resource_6iixm"]
+script = ExtResource("2_fq05p")
+character_name = "张三"
+content = "你今天看起来怎么不大对劲？发生什么事了吗？"
+avatar = ExtResource("1_86yvb")
+show_on_left = true
+
+[sub_resource type="Resource" id="Resource_p5ftn"]
+script = ExtResource("2_fq05p")
+character_name = "李四"
+content = "没什么，我出门想吃个早餐，但是没有带钱包。所以现在吃不了早餐"
+avatar = ExtResource("3_o6ecp")
+show_on_left = false
+
+[sub_resource type="Resource" id="Resource_24mf6"]
+script = ExtResource("2_fq05p")
+character_name = "张三"
+content = "哎呀没事，这点小事怎么能愁眉苦脸的呢？我借点钱给你吃早餐呗。你想吃什么早餐？"
+avatar = ExtResource("4_su3nd")
+show_on_left = true
+
+[sub_resource type="Resource" id="Resource_lthwj"]
+script = ExtResource("2_fq05p")
+character_name = "李四"
+content = "哦，我想要个肉夹馍，再来个驴肉火烧。"
+avatar = ExtResource("5_u7cyk")
+show_on_left = false
+
+[resource]
+script = ExtResource("1_4fml8")
+dialogue_list = Array[ExtResource("2_fq05p")]([SubResource("Resource_6iixm"), SubResource("Resource_p5ftn"), SubResource("Resource_24mf6"), SubResource("Resource_lthwj")])
